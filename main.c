@@ -406,9 +406,9 @@ int main() {
 
     //test();
 
-    char s2[10] = "\tHello\t";
-    size_t res = strlen_(s2);
-    printf("%zu", res);
+    char s2[20] = "HelloHeckwxbcvbtruox";
+    char *res = find(s2, s2 + (sizeof(char) * 11), 114);
+    printf("%c", *res);
 
     return 0;
 }
